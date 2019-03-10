@@ -1,0 +1,512 @@
+/* COMMON STYLE */
+
+html {
+  background-color: #E7E7E7;
+}
+
+body {
+  font-family: sans-serif;
+  width: 1020px;
+  margin: 0 auto;
+  background-color: #FFF;
+}
+
+
+/* HEADER */
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 63px;
+  margin: 0 auto;
+  background-color: #323232;
+}
+
+.left_side_navigate {
+  width: 114px;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.right_side_navigate {
+  width: 116px;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold
+}
+
+.left_side_navigate > li:first-child::after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #474c5f;
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+
+.right_side_navigate > li:first-child::after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #474C5F;
+  margin-left: 8px;
+  margin-bottom: 2px;
+}
+
+.nav_item {
+  color: #FFF;
+}
+
+.nav_item:hover {
+  color: #DDD2C5;
+}
+
+.nav_item:active {
+  color: #DDD;
+}
+
+.first_nav_item {
+  color: #2EAA91;
+}
+
+.logo {
+  padding: 10px 38px 0 38px;
+}
+
+.navigate_decorative_line {
+  width: 960px;
+  height: 16px;
+  margin: 12px auto 0;
+  border-top: 1px solid #E4E9EB;
+}
+
+.triangle_wrapper {
+  margin: -28px auto;
+  display: flex;
+  justify-content: center;
+  width: 138px;
+  height: 28px;
+  background-color: #FFF;
+}
+
+.triangle {
+  width: 0;
+	height: 0;
+	border-left: 46px solid transparent;
+	border-right: 46px solid transparent;
+	border-top: 26px solid #323232;
+}
+
+
+/* MAIN */
+
+/* monster section */
+
+.monsters {
+  margin-top: 90px;
+}
+
+.top_monster_row {
+  display: flex;
+  margin-left: 99px;
+}
+
+.top_monster_row::before {
+  content: "";
+  width: 0px;
+  height: 104px;
+  border-left: 1px solid #e4e9eb;
+  margin-top: 52px;
+}
+
+.top_monster_row::after {
+  content: "";
+  width: 20px;
+  height: 104px;
+  border-right: 1px solid #e4e9eb;
+  margin-top: 52px;
+}
+
+.middle_monster_row {
+  display: flex;
+  margin-top: -40px;
+}
+
+.bottom_monster_row {
+  display: flex;
+  margin-left: 99px;
+  margin-top: -40px;
+}
+
+.bottom_monster_row::before {
+  content: "";
+  width: 0px;
+  height: 104px;
+  border-left: 1px solid #e4e9eb;
+  margin-top: 52px;
+}
+
+.bottom_monster_row::after {
+  content: "";
+  width: 20px;
+  height: 104px;
+  border-right: 1px solid #e4e9eb;
+  margin-top: 52px;
+}
+
+.hexagon_wrapper {
+  margin-left: 20px;
+  width: 180px;
+  height: 208px;
+  transform: rotate(120deg);
+  overflow: hidden;
+}
+
+.hexagon_outside {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-60deg);
+  overflow: hidden;
+}
+
+.hexagon_inside {
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  transform: rotate(-60deg);
+  visibility: visible;
+}
+
+.monster_1 {
+  background-image: url(./assets/monster_1.png);
+}
+
+.monster_2 {
+  background-image: url(./assets/monster_2.png);
+}
+
+.monster_3 {
+  background-image: url(./assets/monster_3.png);
+}
+
+.monster_4 {
+  background-image: url(./assets/monster_4.png);
+}
+
+.monster_5 {
+  background-image: url(./assets/monster_5.png);
+}
+
+.monster_6 {
+  background-image: url(./assets/monster_6.png);
+}
+
+.monster_7 {
+  background-image: url(./assets/monster_7.png);
+}
+
+.monster_8 {
+  background-image: url(./assets/monster_8.png);
+}
+
+.monster_9 {
+  background-image: url(./assets/monster_9.png);
+}
+
+.monster_10 {
+  background-image: url(./assets/monster_10.png);
+}
+
+.monster_11 {
+  background-image: url(./assets/monster_11.png);
+}
+
+.monster_12 {
+  background-image: url(./assets/monster_12.png);
+}
+
+.monster_13 {
+  background-image: url(./assets/monster_13.png);
+}
+
+.slider {
+    display: flex;
+    width: 51px;
+    justify-content: space-between;
+    margin-top: 58px;
+    margin-left: 30px;
+}
+
+.slider_item {
+    width: 6px;
+    height: 6px;
+    background-color: #DDD2C5;
+}
+
+.slider_item:nth-of-type(3) {
+  background-color: #8b8784;
+}
+
+.slider_item:hover {
+    width: 6px;
+    height: 6px;
+    background-color: #DDD;
+}
+
+.monster_decorative_line {
+  width: 960px;
+  height: 12px;
+  margin: 11px auto 0;
+  border-top: 1px solid #E4E9EB;
+}
+
+
+/* Smith Anderson section */
+
+.smith_anderson_summary_section {
+  padding-top: 14px;
+  height: 341px;
+  background-color: #2EB398;
+}
+
+.smith_anderson_about {
+  margin: 0 auto;
+  padding-top: 53px;
+  width: 822px;
+  height: 315px;
+  border-left: 1px solid #219D84;
+  border-right: 1px solid #219D84;
+}
+
+.smith_anderson_about > .hexagon_wrapper {
+  height: 209px;
+  margin-right: 20px;
+  float: left;
+}
+
+.smith_anderson_about  .hexagon_inside {
+  background-position: 49%;
+}
+
+.smith_anderson_photo {
+  background-image: url(./assets/Smith_Anderson_photo.png);
+}
+
+.smith_anderson_about > h1 {
+  margin-top: -2px;
+  color: #D7FCF5;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.smith_anderson_about > h2 {
+  color: #20816D;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+.smith_anderson_about > p {
+  margin-top: 11px;
+  padding-right: 20px;
+  color: #D7fCF5;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.social_networks {
+  margin-right: 20px;
+  margin-top: 35px;
+  width: 145px;
+  height: 30px;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_networks > li > a {
+  background-color: #A4DBD4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.social_networks > li > a:hover {
+background-color: #6CCBBE;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 24px;
+height: 24px;
+}
+
+i {
+  color: #03AC95;
+}
+
+
+/* FOOTER */
+
+/* form section */
+
+.footer_form_section {
+  height: 564px;
+  background-color: #323232;
+}
+
+.footer_top_decorative_line {
+  width: 960px;
+  height: 14px;
+  margin: 0 auto;
+  border-bottom: 1px solid #2B2B2B;
+}
+
+.footer_form_section > h3 {
+  padding-top: 49px;
+  margin-left: 120px;
+  color: #E0E0E0;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.footer_form_section > h4 {
+  margin-top: 2px;
+  margin-left: 120px;
+  color: #BEBEBE;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.footer_form {
+  margin-top: 21px;
+  margin-left: 120px;
+  width: 580px;
+}
+
+.input_fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 312px;
+}
+
+.form_name, .form_email, .form_subject, .form_message   {
+  padding-left: 15px;
+  height: 38px;
+  background-color: #454545;
+  border: none;
+}
+
+.form_message {
+  padding-top: 12px;
+  height: 150px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder  {
+  color: #BEBEBE;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+
+button {
+  width: 90px;
+  height: 37px;
+  margin-left: 491px;
+  margin-top: 17px;
+  border: none;
+  background-color: #2EB398;
+  color: #D7FCF5;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #33C2A5;
+}
+
+.contact {
+  margin-top: -370px;
+  padding-right: 120px;
+  float: right;
+  width: 300px;
+  height: 300px;
+  color: #BEBEBE;
+}
+
+.contact  p {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.contact ul {
+  display: flex;
+  flex-direction: column;
+  height: 56px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.location_wrapper, .phone_wrapper, .mail_wrapper {
+  display: flex;
+}
+
+.location_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+}
+
+.location_text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 8px;
+  color: #BEBEBE;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.location_icon > a, .location_text > a {
+  color: #BEBEBE;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.footer_bottom_decorative_line {
+  width: 960px;
+  height: 53px;
+  margin: 0 auto;
+  border-bottom: 1px solid #2B2B2B;
+}
+
+.bottom_footer {
+  height: 43px;
+  background-color: #222;
+}
+
+.bottom_footer p {
+  margin-left: 40px;
+  padding-top: 16px;
+  font-weight: 100;
+  color: #3C3C3C;
+  font-size: 12px;
+}
